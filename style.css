@@ -1,48 +1,21 @@
-/* General Style */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* Body style */
 body {
-  background-color: #3d087b;
+  background: #3d087b;
 }
-.container {
-  margin: 5px;
+/* Clock logo */
+.clock {
+  width: 200px;
+  height: 100px;
   margin-top: 20px;
 }
-
-/* ---- for logo and Real Time Style start ---- */
-.row-1,
-.row-2 {
-  display: flex;
-}
-
-.row-1 .col,
-.row-2 .col {
-  width: 50%;
-}
-
-/*------- logo and message style start ------*/
-.row-1 .col-1 {
-  margin-left: 5px;
-  display: flex;
-}
-
-/* ---- Message style start ---- */
+/* Message-1 */
 .message-1 {
   width: 220px;
+  height: 88px;
   margin-top: 20px;
   margin-left: 20%;
   font-size: 18px;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 3px;
 }
-/* ---- Message style End ---- */
-
-/*------- logo and message style End ------*/
-/*---- Real time style started -----*/
 .digitalClock {
   margin-top: 20px;
   width: 90%;
@@ -53,7 +26,6 @@ body {
   padding-top: 12px;
   z-index: 3;
 }
-
 .timer {
   width: 98%;
   height: 82px;
@@ -66,7 +38,7 @@ body {
 .time {
   font-family: "Bubblegum Sans", cursive;
   letter-spacing: 2px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #3d087bde;
   margin-top: 20px;
 }
@@ -76,7 +48,7 @@ body {
   border-radius: 5px;
   padding-top: 10px;
   box-sizing: border-box;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #3d087bde;
   text-align: center;
 }
@@ -86,7 +58,7 @@ body {
   border-radius: 5px;
   padding-top: 10px;
   box-sizing: border-box;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #3d087bde;
   text-align: center;
 }
@@ -96,7 +68,7 @@ body {
   border-radius: 5px;
   padding-top: 10px;
   box-sizing: border-box;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #3d087bde;
   text-align: center;
 }
@@ -106,7 +78,7 @@ body {
   border-radius: 5px;
   padding-top: 10px;
   box-sizing: border-box;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #dd39e9;
   text-align: center;
 }
@@ -133,7 +105,7 @@ body {
   background-color: rgba(255, 255, 255, 0.696);
   opacity: 1;
   margin-top: -70px;
-  margin-left: 60px;
+  margin-left: 50px;
   z-index: 2;
 }
 .boxTwo {
@@ -143,28 +115,12 @@ body {
   background-color: rgba(255, 255, 255, 0.696);
   opacity: 0.22;
   margin-top: -90px;
-  margin-left: 80px;
+  margin-left: 70px;
   z-index: 1;
-}
-@media screen and (max-width: 675px) {
-  .row-1,
-  .row-2 {
-    display: block;
-  }
-  .row-1 .col,
-  .row-2 .col {
-    width: 100%;
-  }
-}
-
-/*---- Real time style End -----*/
-/* ---Row-2 style--- */
-.row-2 .col {
-  padding: 20px;
 }
 /* Tble of Timing */
 .timeTable {
-  width: 100%;
+  width: 90%;
   height: 330px;
   box-sizing: border-box;
   border-radius: 10px;
@@ -173,6 +129,7 @@ body {
   padding: 20px 20px;
   position: relative;
   top: 25px;
+  left: 3%;
 }
 .vertical {
   width: 100px;
@@ -199,18 +156,18 @@ select {
 .text {
   position: absolute;
   margin-top: 6px;
-  left: 15%;
+  left: 18%;
   font: 19px Manrope;
   color: #3d087b;
 }
 .grab {
-  width: 95%;
-  height: auto;
+  width: 90%;
+  height: 20%;
   border-radius: 10px;
   background-color: #ffffff;
   margin-top: 100px;
   margin-left: 20px;
-  padding: 15px;
+  padding-top: 5px;
   font: normal normal 900 30px/40px Bauhaus Hv BT;
   letter-spacing: 0px;
 }
@@ -223,7 +180,7 @@ select {
 }
 .morning {
   width: 90%;
-  height: auto;
+  height: 20%;
   background-color: rgba(97, 56, 136, 0.488);
   border-radius: 10px;
   margin-top: 80px;
@@ -245,7 +202,6 @@ select {
   display: flex;
   flex-wrap: wrap;
 }
-
 /* Alarm */
 .alarm {
   width: 180px;
@@ -291,11 +247,10 @@ select {
   );
 }
 .message-2 {
-  width: 220px;
-  margin-top: 80px;
-  font-size: 18px;
-  padding: 5px;
-  border-radius: 10px;
+  width: 180px;
+  height: 80px;
+  margin-left: 10px;
+  margin-top: 100px;
 }
 .guide {
   width: 42%;
@@ -324,4 +279,48 @@ select {
 }
 .set {
   justify-content: space-evenly;
+}
+
+@media screen and (max-width: 994px) {
+  .alarm {
+    position: relative;
+    top: 120px;
+    left: 0;
+    width: 150px;
+  }
+  .message-2 {
+    margin-left: 100%;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .guide {
+    width: 60%;
+    height: 57%;
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #alarm {
+    display: flex;
+  }
+  .guide {
+    margin-top: 2%;
+    margin-left: 40px;
+    height: 50%;
+  }
+  .digitalClock {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .timeTable {
+    width: 98%;
+    position: relative;
+    left: 1%;
+  }
+  .digitalClock {
+    width: 100%;
+    margin-left: 0;
+  }
 }
